@@ -66,6 +66,8 @@ class MessageUserSerializerV1(serializers.ModelSerializer):
     def create(self, validated_data):
         # Extract chat_id from the validated data
         chat_id = validated_data.pop('chat_id', None)
+        person_1 = validated_data.pop('person_1', None)
+        person_2 = validated_data.pop('person_2',None)
 
         # Get the chat instance using the chat_id
         chat = Chat.objects.get(chat_id=chat_id)
