@@ -25,7 +25,7 @@ python manage.py createsuperuser
 python manage.py runserver
 
 Pusher was used for real-time delivery
-Phone number should be 10 digits
+Phone number should be 10 digits (In retrospect this field should have been removed) or the restriction in terms of size of number should be determined based on user location. Which might make the app more complex.
 
 ## Base URLs
 
