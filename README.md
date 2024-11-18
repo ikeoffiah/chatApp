@@ -24,6 +24,9 @@ python manage.py createsuperuser
 
 python manage.py runserver
 
+Pusher was used for real-time delivery
+Phone number should be 10 digits
+
 ## Base URLs
 
 - **Admin Panel**: `/admin/`
@@ -45,3 +48,9 @@ python manage.py runserver
 - **GET** `/api/v1/message/chatprofile<str:pk>`: Get all users you've chatted with (use chat_id as `pk`)
 - **GET** `/api/v1/message/chat/<str:pk>`: Fetch all messages in a specific chat (use chat_id as `pk`)
 - **POST** `/api/v1/message/message`: Send a message
+
+Things I would love to improve 
+
+1. Connect the auth to the chat properly
+2. Add uploading of file
+3. Group chat
